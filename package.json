@@ -2,7 +2,7 @@
   "name": "4a5-tp3-bastox0987",
   "version": "1.0.0",
   "description": "Description du projet, comment l'exécuter, etc...",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -11,6 +11,8 @@
   "license": "ISC",
   "dependencies": {
     "express": "^4.19.2",
-    "mongoose": "^8.3.1"
+    "mongodb": "^6.5.0",
+    "mongoose": "^8.3.1",
+    "uuid": "^9.0.1"
   }
 }
