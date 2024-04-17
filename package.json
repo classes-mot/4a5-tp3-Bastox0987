@@ -4,7 +4,8 @@
   "description": "Description du projet, comment l'exécuter, etc...",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon app.js"
   },
   "keywords": [],
   "author": "",
@@ -14,5 +15,8 @@
     "mongodb": "^6.5.0",
     "mongoose": "^8.3.1",
     "uuid": "^9.0.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.0"
   }
 }
