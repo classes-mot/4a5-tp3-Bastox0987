@@ -1,6 +1,7 @@
 const express = require('express');
 const mongoose = require('mongoose');
 const jeuxRoutes = require('./routes/jeux-routes'); // Importer les routes des jeux
+const utilisateursRoutes = require('./routes/utilisateurs-routes');
 // Importer le gestionnaire d'erreurs
 const errorHandler = require('./handler/error-handler');
 const app = express();
@@ -10,6 +11,7 @@ app.use(express.json());
 
 
 app.use('/api/jeux', jeuxRoutes); // Utiliser les routes des jeux
+app.use('/api/utilisateurs', utilisateursRoutes); // Utiliser les routes des utilisateurs
 
 // Middleware pour gérer les erreurs d'URL
 app.use((req, res, next) => {
